@@ -1,0 +1,48 @@
+.l-header {
+  width: 100%;
+  max-width: 1366px;
+  padding: 27px 30px;
+  height: 80px;
+  @include sp {
+    padding: 20px;
+    height: 60px;
+  }
+}
+
+.l-header__logo {
+  width: 160px;
+}
+
+.l-header__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  background: $white;
+}
+
+.l-header__pageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  p {
+    @include fz(20, 18);
+    font-weight: bold;
+    font-family: $font_noto;
+  }
+}
+
+.l-header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.l-header__menu--icon {
+  margin-right: 8px;
+}
+
+.l-header__menu--text {
+  @include fz(18);
+  font-weight: bold;
+}
