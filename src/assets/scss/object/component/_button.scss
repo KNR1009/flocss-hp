@@ -1,0 +1,49 @@
+.c-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  padding: 18px 0;
+  background-color: $yellow;
+  font-family: $font_futura;
+  text-align: center;
+  color: $black;
+  border-radius: 31px;
+  @include fz(20);
+  border-radius: 8px;
+  @include sp {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.c-button--line {
+  display: block;
+  position: relative;
+  @include fz(20, 18);
+  font-family: $font_futura;
+  padding-left: 62px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    color: $gray;
+    width: 58px;
+    height: 2px;
+    background: $black;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    @include sp {
+      width: 42px;
+    }
+  }
+}
+
+.c-button--line--white {
+  @extend .c-button--line;
+  color: $white;
+  &::before {
+    background-color: $white;
+  }
+}
