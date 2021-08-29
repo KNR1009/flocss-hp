@@ -1,0 +1,35 @@
+.l-footer {
+  padding: 90px 0px 30px;
+  background-color: $yellow;
+  width: 100%;
+  margin: 0 auto;
+  @include sp {
+    padding-top: 60px;
+  }
+}
+
+.l-footer__container {
+  width: 90%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.l-footer__contactForm {
+  padding: 60px 0 50px;
+  background-color: $white;
+}
+
+.l-footer__textBox {
+  @include fz(18);
+  font-family: $font_noto;
+  text-align: center;
+  line-height: 2.55;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.l-footer__logo {
+  max-width: 138px;
+  margin: 90px auto 56px;
+}
