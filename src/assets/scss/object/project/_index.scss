@@ -84,3 +84,45 @@
     }
   }
 }
+
+.p-top__works {
+  background-color: $gray;
+  color: $white;
+  .c-title {
+    text-align: left;
+  }
+
+  .c-button--line {
+    color: $white;
+    margin-top: 25px;
+  }
+}
+
+.p-top__works__main {
+  @include pc {
+    display: flex;
+    max-width: 680px;
+    width: calc(680 / 1180 * 100);
+    justify-content: space-between;
+  }
+}
+
+.p-top__works__options {
+  display: flex;
+  margin-top: 4.2px;
+  p {
+    margin-right: 4.2px;
+  }
+}
+
+.p-top__works__title {
+  @include fz(40, 26);
+  font-weight: bold;
+  margin-top: 13px;
+  margin-bottom: 23px;
+}
+
+.p-top__works__text {
+  @include fz(16, 14);
+  line-height: 2;
+}
