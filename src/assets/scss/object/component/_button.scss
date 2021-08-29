@@ -14,6 +14,16 @@
   margin-right: auto;
 }
 
+.c-button--left {
+  @extend .c-button;
+  margin-left: 0;
+  margin-top: 40px;
+
+  @include sp {
+    margin: 0 auto;
+  }
+}
+
 .c-button--line {
   display: block;
   position: relative;
